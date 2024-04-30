@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session, jsonify
 
-import requests, jsonify, math
+import requests, jsonify, math, time
 
 app = Flask(__name__)
 app.secret_key = 'my_secure_secret_key_with_random_characters_12345'
@@ -8,7 +8,8 @@ app.secret_key = 'my_secure_secret_key_with_random_characters_12345'
 # Simulated user database (user email as key and tuple of name and password as value)
 users = {
     "nadhim@watersaver.com": ("Mohamed Nadhim", "1111"),
-    "drhemalatha@watersaver.com": ("Dr. R. Hemalatha", "1111")
+    "drhemalatha@watersaver.com": ("Dr. R. Hemalatha", "1111"),
+    "manushresth@watersaver.com": ("Manushresth Babyyy 🥰💖", "1111")
 }
 
 @app.route('/')
@@ -35,6 +36,8 @@ def success():
         user_email = session.get('user_email')
         user_name = users[user_email][0]  # Get user's name from the database
         credit_score = 345
+
+        
 
 
         channel_id = '2529189'
