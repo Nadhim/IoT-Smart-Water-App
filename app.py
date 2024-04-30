@@ -37,8 +37,8 @@ def success():
         credit_score = 345
 
 
-        channel_id = '2501461'
-        read_api_key = 'KARHZ6YMTULILF1Y'
+        channel_id = '2529189'
+        read_api_key = 'P0KBGWT4LAXX0UX1'
         url = f'https://api.thingspeak.com/channels/{channel_id}/feeds.json?api_key={read_api_key}'
 
         response = requests.get(url)

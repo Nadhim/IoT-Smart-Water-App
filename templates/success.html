@@ -108,8 +108,8 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script>
-        const channelId = "2501461";
-        const apiKey = "KARHZ6YMTULILF1Y";
+        const channelId = "2529189";
+        const apiKey = "P0KBGWT4LAXX0UX1";
         const numOfResults = 100;
 
         function fetchThingSpeakData() {
@@ -207,8 +207,14 @@
             const updateInterval = 5000; // Update every minute (adjust as needed)
             setInterval(fetchThingSpeakData, updateInterval);
         });
+
+        setTimeout(function(){
+   window.location.reload();
+}, 5000);
+
     </script>
     <!-- Bootstrap JS (including Popper.js) -->
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
